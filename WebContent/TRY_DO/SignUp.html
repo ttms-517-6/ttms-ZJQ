@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/Bootstrap/animate.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        .main{
+            max-width: 400px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow:
+                    0 2.8px 2.2px rgba(0, 0, 0, 0.001),
+                    0 6.7px 5.3px rgba(0, 0, 0, 0.005),
+                    0 12.5px 10px rgba(0, 0, 0, 0.01),
+                    0 22.3px 17.9px rgba(0, 0, 0, 0.018),
+                    0 41.8px 33.4px rgba(0, 0, 0, 0.032),
+                    0 100px 80px rgba(0, 0, 0, 0.07);
+
+        }
+
+        .form-signin{
+            width: 100%;
+            max-width: 350px;
+            margin:10px auto;
+        }
+        .form-control{
+            box-sizing: border-box;
+            font-size: 16px;
+            height: 30px;
+        }
+        .form-signin input[type="email"]{
+            margin-bottom: 10px;
+        }
+        .form-signin input[type="password"]{
+            margin-bottom: 30px;
+        }
+        .bt{
+            width: 100%;
+            height: 45px;
+            color: #fff;
+            border: none;
+            position: relative;
+            font-size: 22px;
+            font-weight: bold;
+            background: linear-gradient(135deg,#24ff72,#2196f3);
+            transition:.1s linear all;
+        }
+        .bt:hover{
+            background: linear-gradient(135deg,#2196f3,#24ff72);
+            transform: translateY(-3px);
+            box-shadow:0 0px 10px #2196f3 ;
+        }
+        #lyy{
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body class="text-center">
+<div class="main">
+    <form action="" class="form-signin">
+
+        <img src="img/场地分类-剧院.svg" alt="" class="mb-4" width="86" height="86">
+        <h1 class="h2 mb-4">阳珑影业票务管理系统</h1>
+        <input type="email" id="inputEmail" class="form-control col-lg-8" placeholder="账户"  autofocus>
+        <input type="password" id="inputPassword" class="form-control col-lg-8" placeholder="密码" >
+
+        <a class="btn btn-secondary btn-block bt animated bounceInLeft">注册</a>
+        <a href="SignIn.html" class="btn btn-outline-secondary btn-lg btn-block animated bounceInRight">返回登录</a>
+        <p id="lyy" class="mb-3 text-muted">@2021 阳珑影视传媒有限公司</p>
+
+        <script src="js/Bootstrap/jquery.js"></script>
+    </form>
+</div>
+</body>
+</html>

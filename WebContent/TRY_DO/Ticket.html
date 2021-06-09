@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nav+left.css">
+    <link rel="stylesheet" href="css/Ticket.css">
+    <link rel="stylesheet" href="css/Bootstrap/animate.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand col-md-3 col-lg-2 px-3 name" href="#">明煌传媒信息管理系统</a>
+    <button class="navbar-toggler position-absolute  d-md-none collapsed" type="button" data-toggle="collapse"
+            data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+<!--        <nav id="sidebarMenu" class="col-md-2 col-lg-2 d-md-block bg-light sidebar collapse">-->
+<!--            <div class="sidebar-sticky pt-2">-->
+<!--                <ul class="nav flex-column">-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="../index.html">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>-->
+<!--                            首 页<span class="sr-only">(current)</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="Program.html">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">-->
+<!--                                <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>-->
+<!--                            </svg>-->
+<!--                            电 影 计 划-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li id="active_index" class="nav-item">-->
+<!--                        <a class="nav-link" href="#">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>-->
+<!--                            购 票/退 票-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="../admin/studio/Movie_Hall.html">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">-->
+<!--                                <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>-->
+<!--                            </svg>-->
+<!--                            影 厅 管 理-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="User.html">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>-->
+<!--                            用 户 管 理-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="Statistics.html">-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>-->
+<!--                            数 据 统 计-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </nav>-->
+        <nav id="sidebarMenu" class="animated bounceInRight col-md-2 col-lg-2 d-md-block bg-light sidebar collapse ">
+            <div class="sidebar-sticky pt-2">
+                <ul class="nav flex-column">
+                    <li  class="nav-item">
+                        <a class="nav-link active_index" href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                            首 页<span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Program.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-alarm-fill" viewBox="0 0 16 16">
+                                <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"/>
+                            </svg>
+                            演 出 计 划
+                        </a>
+                    </li>
+                    <li id="active_index" class="nav-item">
+                        <a class="nav-link" href="Ticket.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                            </svg>
+                            票 务 管 理
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Movie_Hall.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar-month-fill" viewBox="0 0 16 16">
+                                <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zm.104 7.305L4.9 10.18H3.284l.8-2.375h.02zm9.074 2.297c0-.832-.414-1.36-1.062-1.36-.692 0-1.098.492-1.098 1.36v.253c0 .852.406 1.364 1.098 1.364.671 0 1.062-.516 1.062-1.364v-.253z"/>
+                                <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM2.56 12.332h-.71L3.748 7h.696l1.898 5.332h-.719l-.539-1.602H3.1l-.54 1.602zm7.29-4.105v4.105h-.668v-.539h-.027c-.145.324-.532.605-1.188.605-.847 0-1.453-.484-1.453-1.425V8.227h.676v2.554c0 .766.441 1.012.98 1.012.59 0 1.004-.371 1.004-1.023V8.227h.676zm1.273 4.41c.075.332.422.636.985.636.648 0 1.07-.378 1.07-1.023v-.605h-.02c-.163.355-.613.648-1.171.648-.957 0-1.64-.672-1.64-1.902v-.34c0-1.207.675-1.887 1.64-1.887.558 0 1.004.293 1.195.64h.02v-.577h.648v4.03c0 1.052-.816 1.579-1.746 1.579-1.043 0-1.574-.516-1.668-1.2h.687z"/>
+                            </svg>
+                            剧 院 管 理
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="User.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                                <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                            </svg>
+                            用 户 管 理
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Statistics.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check2-all" viewBox="0 0 16 16">
+                                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+                            </svg>
+                            数 据 统 计
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                       	<a class="nav-link" href="playMusic/music.html">
+                           	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+  								<path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+							</svg>
+                            音 乐 播 放
+                       	</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="vue" class="border">
+
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cloud" viewBox="0 0 16 16">
+                            <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                            </svg>
+                            <span>天气查询</span>
+                            </span>
+                    </div>
+                    <input  @keyup.enter="searchWeather" v-model="city" placeholder="城市名称" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+
+                <ul class="weather_list" @load="searchWeather">
+                    <li v-for="item in weatherList">
+                        <b>{{ item.date }}</b>
+                        <br>
+                        <span>{{ item.type }}</span>&nbsp;
+                        <span>{{ item.low }}</span>&nbsp;
+                        <span>{{ item.high }}</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+<!--唐人街探案3模态框-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" >
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">购买影票</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="table-responsive ">
+                            <table class="table">
+                                <thead>
+                                <tr class="list_nav">
+                                    <th>电影名称</th>
+                                    <th>演出厅</th>
+                                    <th>放映时间</th>
+                                    <th>结束时间</th>
+                                    <th>所有座位</th>
+                                    <th>剩余座位</th>
+                                    <th>选择</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>唐人街探案3</td>
+                                        <td>01厅</td>
+                                        <td>3/19 08:00</td>
+                                        <td>3/19 10:00</td>
+                                        <td>180</td>
+                                        <td>104</td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>唐人街探案3</td>
+                                        <td>03厅</td>
+                                        <td>3/19 08:20</td>
+                                        <td>3/19 10:20</td>
+                                        <td>150</td>
+                                        <td>134</td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>唐人街探案3</td>
+                                        <td>06厅</td>
+                                        <td>3/19 08:25</td>
+                                        <td>3/19 10:25</td>
+                                        <td>150</td>
+                                        <td>98</td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>唐人街探案3</td>
+                                        <td>07厅</td>
+                                        <td>3/19 09:40</td>
+                                        <td>3/19 11:40</td>
+                                        <td>100</td>
+                                        <td>49</td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>唐人街探案3</td>
+                                        <td>10厅</td>
+                                        <td>3/19 11:30</td>
+                                        <td>3/19 13:30</td>
+                                        <td>120</td>
+                                        <td>104</td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>唐人街探案3</td>
+                                        <td>14厅</td>
+                                        <td>3/19 11:50</td>
+                                        <td>3/19 14:20</td>
+                                        <td>130</td>
+                                        <td>79</td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">手动选座</button>
+                        <button type="button" class="btn btn-info" data-dismiss="modal">系统选座</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <main id="main" role="main" class="main col-md-9 col-lg-10 float-left"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+            <div class="card mt-1 mb-1 animated fadeInUp">
+                <div class="no-gutters float-left row">
+                    <a href="movie/trjta3.html" class="col-md-4 "   data-toggle="modal" data-target="#exampleModal">
+                        <img src="img/p2622388983.webp" alt="..." class="col-md-12 col-sm-12 movie_list">
+                    </a>
+                    <div class="col-md-8 pr-2">
+                        <a href="movie/trjta3.html" class="card-body ml-3"   data-toggle="modal" data-target="#exampleModal">
+                            <h4 class="card-title ml-3">唐人街探案3</h4>
+                            <p class="card-text1">&nbsp;&nbsp;&nbsp;&nbsp;继曼谷、纽约之后，东京再出大案。唐人街神探唐仁（王宝强 饰）、秦风（刘昊然 饰）受侦探野田昊（妻夫木聪 饰）的邀请前往破案。“CRIMASTER世界侦探排行榜”中的侦探们闻讯后也齐聚东京，加入挑战，而排名第一Q的现身，让这个大案更加扑朔迷离，一场亚洲最强神探之间的较量即将爆笑展开……</p>
+                            <small class="text-muted ml-3">上映时间：2021-02-12(中国大陆)</small>
+                            <a href="movie/trjta3.html" class="btn btn-primary float-right col-md-3 mr-3"   data-toggle="modal" data-target="#exampleModal">购票</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-1 mb-1 animated fadeInUp">
+                <div class="row no-gutters">
+                    <a href="movie/nhlhy.html" class="col-md-4 ">
+                        <img src="img/p2622388983.webp" alt="..." class="col-md-12 col-sm-12 movie_list" >
+                    </a>
+                    <div class="col-md-8 pr-2">
+                        <a href="movie/nhlhy.html" class="card-body ml-3">
+                            <h4 class="card-title ml-3">你好！李焕英</h4>
+                            <p class="card-text1">&nbsp;&nbsp;&nbsp;&nbsp;2001年的某一天，刚刚考上大学的贾晓玲（贾玲 饰）经历了人生中的一次大起大落。一心想要成为母亲骄傲的她却因母亲突遭严重意外，而悲痛万分。在贾晓玲情绪崩溃的状态下，竟意外的回到了1981年，并与年轻的母亲李焕英（张小斐 饰）相遇，二人形影不离，宛如闺蜜......</p>
+                            <small class="text-muted ml-3">上映时间：2021-02-12(中国大陆)</small>
+                            <a href="movie/nhlhy.html" class="btn btn-primary float-right col-md-3 mr-2">购票</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-1 mb-1 animated fadeInUp">
+                <div class="row no-gutters">
+                    <a href="movie/csxsj.html" target="_blank" class="col-md-4 ">
+                        <img src="img/p2630961915.webp" alt="..." class="col-md-12 col-sm-12 movie_list">
+                    </a>
+                    <div class="col-md-8 pr-2">
+                        <a href="movie/csxsj.html" target="_blank" class="card-body ml-3">
+                            <h4 class="card-title ml-3">刺杀小说家</h4>
+                            <p class="card-text1">&nbsp;&nbsp;&nbsp;&nbsp;异世界皇都，天神赤发鬼残暴统治，滥杀无辜。少年空文因被赤发鬼追杀，决定奋起反击。在黑甲（郭京飞 饰）的指引下，踏上了凡人弑神之路。这是小说家路空文（董子健 饰）笔下的奇幻世界。没想到小说的进程，竟然影响着现实世界。这时一名男子（雷佳音 饰）接下了刺杀他的任务……</p>
+                            <small class="text-muted ml-3">上映时间：2021-02-12(中国大陆)</small>
+                            <a href="movie/csxsj.html" target="_blank" class="btn btn-primary float-right col-md-3 mr-2">购票</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-1 mb-1 animated fadeInUp">
+                <div class="row no-gutters">
+                    <a href="movie/rcxy.html" target="_blank" class="col-md-4 ">
+                        <img src="img/p2622670167.webp" alt="..." class="col-md-12 col-sm-12 movie_list">
+                    </a>
+                    <div class="col-md-8 pr-2">
+                        <a href="movie/rcxy.html" target="_blank" class="card-body ml-3">
+                            <h4 class="card-title ml-3">人潮汹涌</h4>
+                            <p class="card-text1">&nbsp;&nbsp;&nbsp;&nbsp;2021年，你做好准备换个活法，牛转乾坤了吗？ 顶级杀手周全（刘德华 饰）和落寞群演陈小萌（肖央 饰）在一次意外中交换了身份。杀手在跌入谷底的过程中，重新审视了爱情和生活；群演在冒充杀手的过程中，彻底重塑了人生。两个人一起历经的荒诞，有啼笑皆非，更有热血沸腾。</p>
+                            <small class="text-muted ml-3">上映时间：2021-02-12(中国大陆)</small>
+                            <a href="movie/rcxy.html" target="_blank" class="btn btn-primary float-right col-md-3 mr-2">购票</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-1 mb-1 animated fadeInUp">
+                <div class="row no-gutters">
+                    <a href="movie/lldq.html" target="_blank" class="col-md-4 ">
+                        <img src="img/p2545472803.webp" alt="..." class="col-md-12 col-sm-12 movie_list">
+                    </a>
+                    <div class="col-md-8 pr-2">
+                        <a href="movie/lldq.html" target="_blank" class="card-body ml-3">
+                            <h4 class="card-title ml-3">流浪地球</h4>
+                            <p class="card-text1">&nbsp;&nbsp;&nbsp;&nbsp;近未来，科学家们发现太阳急速衰老膨胀，短时间内包括地球在内的整个太阳系都将被太阳所吞没。为了自救，人类提出一个名为“流浪地球”的大胆计划，即倾全球之力在地球表面建造上万座发动机和转向发动机，推动地球离开太阳系，用2500年的时间奔往另外一个栖息之地……</p>
+                            <small class="text-muted ml-3">上映时间：2019-02-05(中国大陆)</small>
+                            <a href="movie/lldq.html" target="_blank" class="btn btn-primary float-right col-md-3 mr-2">购票</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-1 mb-1 animated fadeInUp">
+                <div class="row no-gutters">
+                    <a href="movie/afd.html" target="_blank" class="col-md-4 ">
+                        <img src="img/p2634997853.webp" alt="..." class="col-md-12 col-sm-12 movie_list">
+                    </a>
+                    <div class="col-md-8 pr-2">
+                        <a href="movie/afd.html" target="_blank" class="card-body ml-3">
+                            <h4 class="card-title ml-3">阿凡达</h4>
+                            <p class="card-text1">&nbsp;&nbsp;&nbsp;&nbsp;战斗中负伤而下身瘫痪的前海军战士杰克·萨利（萨姆·沃辛顿 Sam Worthington 饰）决定替死去的同胞哥哥来到潘多拉星操纵格蕾丝博士（西格妮·韦弗 Sigourney Weaver 饰）用人类基因与当地纳美部族基因结合创造出的 “阿凡达” 混血生物。杰克的目的是打入纳美部落，外交说服他们......</p>
+                            <small class="text-muted ml-3">上映时间：2010-01-04(中国大陆)</small>
+                            <a href="movie/afd.html" class="btn btn-primary float-right col-md-3 mr-2">购票</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-1 mb-1 animated fadeInUp" style="width: 49%;height: 20%;">
+                <div class="row no-gutters">
+                    <a href="movie/fczlm.html" class="col-md-4 ">
+                        <img src="img/p2550755859.webp" alt="..." class="col-md-12 col-sm-12 movie_list">
+                    </a>
+                    <div class="col-md-8 pr-2">
+                        <a href="movie/fczlm.html" class="card-body ml-3">
+                            <h4 class="card-title ml-3">复仇者联盟4：终局之战</h4>
+                            <p class="card-text1">&nbsp;&nbsp;&nbsp;&nbsp;一声响指，宇宙间半数生命灰飞烟灭。几近绝望的复仇者们在惊奇队长（布丽·拉尔森 Brie Larson 饰）的帮助下找到灭霸（乔什·布洛林 Josh Brolin 饰）归隐之处，却得知六颗无限宝石均被销毁，希望彻底破灭。如是过了五年，迷失在量子领域的蚁人（保罗·路德 Paul Rudd 饰）意外回到现实世界...</p>
+                            <small class="text-muted ml-3">上映时间：2021-02-12(中国大陆)</small>
+                            <a href="movie/fczlm.html" class="btn btn-primary float-right col-md-3 mr-2">购票</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-1 mb-1 animated fadeInUp" style="width: 49%;height: 20%;">
+                <div class="row no-gutters">
+                    <a href="movie/fkysr.html" class="col-md-4 ">
+                        <img src="img/p2629710964.webp" alt="..." class="col-md-12 col-sm-12 movie_list">
+                    </a>
+                    <div class="col-md-8 pr-2">
+                        <a href="movie/fkysr.html" class="card-body ml-3">
+                            <h4 class="card-title ml-3">疯狂原始人2</h4>
+                            <p class="card-text1">&nbsp;&nbsp;&nbsp;&nbsp;经历了逃离洞穴、挺过末日危机之后的原始人咕噜家族，咕噜一家决定寻找新家园。中途盖（瑞恩·雷诺兹 Ryan Reynolds 配音）已成了咕噜一家中的一员，但让瓜哥（尼古拉斯·凯奇 Nicolas Cage 配音）头疼的是，盖跟女儿小伊（艾玛·斯通 Emma Stone 配音）每天你侬我侬，还妄想组成只属于两人的小家庭......</p>
+                            <small class="text-muted ml-3">上映时间：2021-02-12(中国大陆)</small>
+                            <a href="movie/fkysr.html" class="btn btn-primary float-right col-md-3 mr-2">购票</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<script src="js/Bootstrap/jquery.js"></script>
+<script src="js/Bootstrap/bootstrap.bundle.js"></script>
+<!--axios-->
+<script src="js/axios.min.js"></script>
+<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+<script src="js/vue.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
